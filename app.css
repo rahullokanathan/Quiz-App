@@ -1,0 +1,130 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://raw.githubusercontent.com/joseguera/quiz-app/master/images/soccer-crowd-stadium.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: Consolas, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+main {
+ height: 800px;
+ margin-top: 50;
+ margin-bottom: 50;
+ background:rgba(255, 255, 255, 0.8);
+ margin-left: 40px;
+ margin-right: 40px;
+ margin-top:50px;
+ margin-bottom: 50px;
+ border-radius: 3px; 
+}
+
+.form {
+  border: 2px solid black;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  /* height: 400px; */
+  text-align: center;
+}
+
+button {
+  position: relative;
+  top: 10px;
+  width: 150px;
+  height: 35px;
+  background-color: rgb(4, 90, 4);
+  border-color: black;
+  border-radius: 3px;
+  font-size: 18px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+
+h1 {
+  padding-top: 100px;
+}
+
+h2 { 
+  padding-top: 70px;
+}
+
+p {
+  font-size: 19px;
+  color: rgb(4, 90, 4); 
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  list-style-position: inside;
+  line-height: 35px;
+  font-size: 17px;
+  display: inline-block;
+  text-align: justify;
+  height: 40px;;
+  padding: 0;
+}
+
+img {
+  height: 300px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+input {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) {
+  body{
+  background-size: 100% 110%;
+  }
+
+  img {
+    width: 180px;
+    height: 140px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+
+  img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+
+  img {
+  width: 300px;
+  height: 200px;
+  }
+}
+
+
+
+
+
+
